@@ -180,7 +180,7 @@ function getData() {
     //   try again function
     let againBtn = document.querySelector(".again_btn");
     againBtn.onclick = function () {
-      window.location = "../index.html";
+      window.location.reload();
     };
 
     //the timer function
