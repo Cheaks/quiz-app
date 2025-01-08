@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.cssy">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz app</title>
+</head>
+
+<body>
+
+    <main class="parameters">
+        <h1>Quiz App</h1>
+        <main>
+            <h5 class="text-center">Difficulty</h5>
+            <section class="deffuclity">
+                <input type="radio" name="param" id="#easy" data-def="easy">
+                <label for="#easy">easy</label>
+                <input type="radio" name="param" id="#meduim" data-def="medium">
+                <label for="#meduim">medium</label>
+                <input type="radio" name="param" id="#hard" data-def="hard">
+                <label for="#hard">hard</label>
+            </section>
+        </main>
+
+        <main>
+            <h5 class="text-center">Categories</h5>
+            <section class="categories">
+                <select name="" id="selcters">
+                <option value="21">sports</option>
+                <option value="23">history</option>
+                <option value="27">animals</option>
+                <option value="19">mathematics</option>
+                <option value="11">films</option>
+            </select>
+            </section>
+        </main>
+        <main>
+            <h5 class="text-center">Question timer</h5>
+            <section class="qustDuration">
+                <input type="range" id="duration" min="10" max="100" value="10">
+                <div>10s</div>
+            </section>
+            <p class="text-center" style="display: none; color: brown;">Please select both a difficulty and a category</p>
+        </main>
+
+        <div class="start_quiz">start quiz</div>
+
+
+
+
+    </main>
+    <section class="score_container" style="display: none;">
+        <div class="score">
+            <span></span>
+        </div>
+        <div class="again_btn" id='againBtn'> Try again</div>
+    </section>
+
+    <section class="quiz_container">
+        <div class="timerWidthContainer">
+        </div>
+        <main class="d-flex justify-content-between category_container">
+            <div class="category">Category : </div>
+            <div class="questions_count">Number of questions : </div>
+        </main>
+        <main class="questions_area">
+            <h2></h2>
+            <main class="answers_container">
+            </main>
+
+        </main>
+        <div class="submit_btn">Send answer</div>
+        <main class="timer_container d-flex justify-content-between align-items-center">
+            <div class="bullets_container d-flex">
+            </div>
+            <div class="timer"></div>
+        </main>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
